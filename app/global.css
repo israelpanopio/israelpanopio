@@ -1,0 +1,254 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Landing Screen  */
+body {
+  /* background-color: #5adeff;
+  
+  :-webkit-scrollbar {
+    display: none;
+  } */
+}
+
+
+.intro_background{
+  overflow-x: hidden;
+  height: 100vh;
+  perspective: 10px;
+  overflow-y: auto;
+}
+
+.sun_glare_animated{
+  background-image: radial-gradient(
+    #f4bf07 2%, 
+    #fc9c54 25%,
+    transparent 70%);
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    padding: 60px;
+    margin: 25vh auto auto auto;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    position: fixed;
+  
+    
+    @media screen and (orientation: landscape) {
+      height: 450px;
+      width: 450px;
+      padding: 100px;
+      margin: 25vh 18% auto auto;
+      right: 0;
+  
+    }
+}
+
+.sun_glare{
+  background-image: radial-gradient(
+    #f4bf07 2%, 
+    #fc9c54 25%,
+    transparent 70%);
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  padding: 60px;
+  z-index: 2;
+  transform: translateZ(-50px) scale(6.1);
+  margin: -25vh -100% auto auto;
+  right: 0;
+
+  
+  @media screen and (orientation: landscape) {
+    height: 450px;
+    width: 450px;
+    padding: 100px;
+    margin: 50% -100% auto auto;
+  }
+}
+
+.sun{
+  background-image: radial-gradient(
+    white 5%,
+    #f4f8c1 60%, 
+    #f4bf07 67%,
+    transparent 70%);
+  border-radius: 50%;
+  height: 130px;
+  width: 130px;
+  position: fixed;
+    
+  @media screen and (orientation: landscape) {
+  height: 250px;
+  width: 250px;
+  }
+}
+
+.cloud_1{
+  margin: 5% 3%;
+
+  @media screen and (orientation: landscape) {
+    margin: 5% 25% auto 30%;
+  }
+}
+
+.cloud_2{
+  margin: 35% auto auto -100px;
+
+  @media screen and (orientation: landscape) {
+    margin: 15% 35%;
+  }
+}
+
+header{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  transform-style: preserve-3d;
+  z-index: 3;
+}
+
+.bg_1 {
+  transform: translateZ(-40px) scale(5.1);
+}
+.bg_2 {
+  transform: translateZ(-20px) scale(3.1);
+}
+.bg_3 {
+  transform: translateZ(-15px) scale(2.5);
+}
+.bg_4 {
+  transform: translateZ(-10px) scale(1);
+  z-index: 4;
+}
+
+.mountains {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  overflow-y: visible;
+
+  @media screen and (orientation: landscape) {
+    padding-top: 50vh !important;
+    margin-top: 50vh !important;
+    }
+}
+
+/* Introduction Message */
+.intro {
+  max-width: 1400px;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: auto;
+  position: absolute;
+
+  @media screen and (min-width: 1100px) {
+    grid-template-columns: 1fr 600px;
+  }
+}
+
+.intro_message {
+  margin: 20px;
+  background-image: radial-gradient(
+    #fc9c54 6%, 
+    transparent 40%);
+    position: sticky;
+    top: 0;
+    
+  @media screen and (min-width: 1400px) {
+    max-width: 80%;
+    background-image: radial-gradient(
+      #fc9c54 6%, 
+      transparent 55%);
+    margin: 20px;
+  }
+}
+
+.intro_text {
+  color: #08183A;
+  text-shadow: 1px 1px 2px #fd5e53, 0 0 25px #fc9c54, 0 0 5px #f4bf07;
+}
+
+.intro_icons{
+  background-image: radial-gradient(
+    transparent 2%, 
+    #f4bf07 40%,
+    #fc9c54 45%,
+    transparent 75%);
+  height: 56px;
+  width: 56px;
+  padding: 10px;
+  color: white;
+}
+
+.intro_button{
+  background-color: white;
+  box-shadow: 1px 1px 2px #fd5e53, 0 0 25px #fc9c54, 0 0 5px #f4bf07;
+}
+.filler{
+  
+  @media screen and (orientation: landscape) {
+  height: 280px;
+  width: 280px;
+  }
+}
+
+/* Mouse */
+.cursor {
+  @media screen and (orientation: landscape) {
+    background-image: radial-gradient(
+      white 15%, 
+      #fc9c54 45%,
+      transparent 70%);
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    opacity: 15%;
+    z-index: 999;
+  }
+}
+
+/* About */
+.about {
+  height: 4000px;
+  background-color: black;
+  z-index: 100;
+}
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: red;
+  transform-origin: 0%;
+}
+
+.scroll_down{
+  max-width: 1400px;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 35vh auto auto auto;
+  position: absolute;
+  font-size: xx-large;
+  transform: translateZ(-19px) scale(3.1);
+
+  @media screen and (min-width: 1100px) {
+    grid-template-columns: 1fr 600px;
+    font-size: xxx-large;
+    margin: 30vh auto auto auto;
+  }
+}
+
+.scroller_text{
+  margin: auto 50% ;
+}

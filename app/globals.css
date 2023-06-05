@@ -2,26 +2,309 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+body{
+  overflow-x: hidden;
+  margin: -20px 0 0 0;
+  font-size: x-large;
+  color: #8598BC;
+  background-color: rgb(15 23 42);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+b{
+  color: white;
+}
+
+p{
+  margin-top: 10px;
+}
+
+h3{
+  font-size: 2rem;
+  color: white;
+}
+
+.landing{
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  height: 100vh;
+  z-index: -2;
+}
+
+.cursor {
+  @media screen and (orientation: landscape) {
+    background-image: radial-gradient(
+      white 35%, 
+      transparent 70%);
+    height: 700px;
+    width: 700px;
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    opacity: 4%;
+    z-index: 999;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.sun_glare{
+  background-image: radial-gradient(
+    #f4bf07 2%, 
+    #fc9c54 25%,
+    transparent 70%);
+  height: 250px;
+  width: 250px;
+  padding: 60px;
+  position: fixed;
+  right: 0;
+  z-index: -1;
+  
+  @media screen and (orientation: landscape) {
+    height: 450px;
+    width: 450px;
+    padding: 100px;
+    right: 25vw;
+  }
+}
+
+.sun{
+  background-image: radial-gradient(
+    white 5%,
+    #f4f8c1 60%, 
+    #f4bf07 67%,
+    transparent 70%);
+    /* background-color: red; */
+  height: 130px;
+  width: 130px;
+    
+  @media screen and (orientation: landscape) {
+  height: 250px;
+  width: 250px;
+  }
+}
+
+.clouds_1{
+  background-image: url('/background/clouds_1.png');
+  background-size: contain;
+  position: fixed;
+  z-index: 0;
+  top: 10vh;
+  height: 30vh;
+  width: 30vh;
+  background-repeat: no-repeat;
+  opacity: 0.7;
+
+  @media screen and (orientation: landscape) {
+    height: 40vh;
+    width: 40vh;
+  }
+}
+
+.clouds_2{
+  background-image: url('/background/clouds_2.png');
+  background-size: contain;
+  position: fixed;
+  z-index: 1;
+  top: 30vh;
+  height: 40vh;
+  width: 40vh;
+  background-repeat: no-repeat;
+
+  @media screen and (orientation: landscape) {
+    height: 60vh;
+    width: 60vh;
+  }
+}
+
+.mountain_div {
+  position: static;
+  background: transparent;
+  height: 200vh;    
+
+  @media screen and (orientation: landscape) {
+    height: 4000px;
+    }
+}
+
+.mountains {
+  position: fixed;
+  height: 105%;
+  width: 105%;
+  object-fit: cover;
+  overflow-y: visible;
+}
+
+.bg_1 {
+  z-index: 0;
+}
+.bg_2 {
+  z-index: 1;
+}
+.bg_3 {
+  z-index: 3;
+}
+.bg_4 {
+  z-index: 4;
+}
+
+.scroll_down{
+  position: fixed;
+  z-index: 2;
+  font-size: xx-large;
+  margin: 40vh 45% auto;
+  color: #000;
+
+  @media screen and (min-width: 1100px) {
+    font-size: xxx-large;
+    margin: 30%;
+  }
+}
+
+.scroller_text{
+  margin: auto 40% ;
+
+  @media screen and (min-width: 1100px) {
+  margin: auto 46% ;
+  }
+}
+
+/* Introduction Message */
+.intro_message {
+  margin: 20px;
+    position: fixed !important;
+    top: 0;
+    max-width: 500px;
+    z-index: 7;
+    
+  @media screen and (min-width: 1400px) {
+    left: calc(50vw - 700px);
+    top: 10vh;
+  }
+}
+
+.nav{
+  display: none;
+
+  @media screen and (min-width: 1020px) {
+    padding-top: 100px;
+    padding-left: 25px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    font-weight: 400;
+  }  
+}
+
+.navLinkScroll{
+  cursor: pointer;
+  padding: 15px auto;
+  border-radius: 5px 20px 20px 5px;
+
+  &.active{
+    background-color: rgb(47, 76, 143);
+    font-weight: 1000;
+    padding-left: 20px;
+    color: white;
+}
+
+  &:hover{
+    background-color: rgb(47, 76, 143);
+    font-weight: 700;
+    padding-left: 20px;
+    color: white;
+  }
+}
+
+.intro_icons{
+  height: 56px;
+  width: 56px;
+  padding: 10px;
+  color: white;
+  margin-top: 40px;
+
+  @media screen and (min-width: 1020px) {
+    height: 70px;
+    width: 70px;
+    padding: 17px;
+    font-size: 3rem;
+    margin-top: 30vh;
+  }
+}
+
+.intro_button{
+  background-color: black;
+  margin: 0;
+  box-shadow: 1px 1px 2px #fd5e53, 0 0 25px #fc9c54, 0 0 5px #f4bf07;
+}
+
+.content_div{
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 8;
+  
+  @media screen and (min-width: 1020px) {
+    margin-left: calc(50vw - 50px);
+    max-width: 700px;
+  }
+}
+
+.about{
+  position: relative;
+  padding: 15px;
+  background-image: linear-gradient(transparent 0.5%, rgb(15 23 42) 8%);
+  font-size: large;
+
+  
+  @media screen and (min-width: 1020px) {
+    font-size: x-large;
+  }
+}
+
+.contents_div{
+  position: relative;
+  background-color: rgb(15 23 42);
+  padding: 15px;
+  font-size: 1rem;
+
+  @media screen and (min-width: 1020px) {
+    font-size: 1.3rem;
+  }
+}
+
+.experience_grid{
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 60px;
+
+  @media screen and (min-width: 1020px) {
+    grid-template-columns: 200px 1fr;
+    column-gap: 20px
+  }
+
+  &:hover{
+    background-color: rgb(24, 38, 71);
+    padding: 20px;
+    margin: 40px -20px -20px -20px;
+    border-radius: 20px;
+  }
+}
+
+.projects{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0 10px 0 10px;
+}
+
+.components{
+  font-size: small;
+
+  @media screen and (min-width: 1020px) {
+    font-size: large;
+  }
+
 }
