@@ -28,7 +28,7 @@ const SunSky = ({ scrollYProgress, opacitySun }) => {
       </motion.div>
       <motion.div
         initial={{ backgroundImage: `linear-gradient(rgb(90, 222, 255) 5%, rgb(90, 222, 255) 10%, rgb(255, 255, 255) 70%, rgb(255, 255, 255) 70%, rgb(255, 255, 255))`}}
-        animate={{ backgroundImage: "linear-gradient(rgb(9, 74, 116) 5%, rgb(75, 61, 96) 15%, rgb(241, 121, 68) 25%, rgb(252, 192, 94) 45%, rgb(255, 255, 255))" }}
+        animate={{ backgroundImage: "linear-gradient(rgb(9, 74, 116) 1%, rgb(75, 61, 96) 15%, rgb(241, 121, 68) 25%, rgb(252, 192, 94) 45%, rgb(255, 255, 255))" }}
         style={{ backgroundImage }}
         transition={{ ease: "easeOut", duration: 2 }}
         className='landing'
