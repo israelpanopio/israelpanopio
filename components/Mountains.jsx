@@ -43,8 +43,8 @@ const Mountains = ({ scrollYProgress, targetRef, opacity }) => {
         alt='mountains'
         className='bg_4 mountains'
         style={{ top: top4 }}
-        initial={{ top: "80vh" }}
-        animate={{ top: "50vh" }}
+        initial={{ top: "70vh" }}
+        animate={{ top: "40vh" }}
         transition={{ ease: "easeOut", duration: 2 }}
       />
       <motion.div 
