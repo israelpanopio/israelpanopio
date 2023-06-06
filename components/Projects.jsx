@@ -50,10 +50,8 @@ const Projects = () => {
         </div>
         <div>
           <b>Filipino Aspirants to Canada</b>
-          <p>Back in 2020, my used to be girlfriend (now wife), and I got married and started a family. 
-            We like travelling, but decided it is time to settle down. 
-            Settling down meaning get close to where the adventure is.
-            Hence, we choose to move to one of the most beautiful place in the world, British Columbia. 
+          <p>Back in 2020, my wife and I decided to settle down to one of the most beautiful places in the world.
+            Hence, in 2023 we moved to the beautiful British Columbia. 
           </p>
           <p>
             The journey wasn't easy. Achieving so, inspired me to share my knowledge, and through this website, I help my fellow aspirants achieve their goal as well.
