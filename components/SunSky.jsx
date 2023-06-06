@@ -4,9 +4,9 @@ import { motion, useTransform } from 'framer-motion';
 import { FaAngleDoubleDown } from 'react-icons/fa';
 
 const SunSky = ({ scrollYProgress, opacitySun }) => {
-    const top = useTransform(scrollYProgress, [0, 1], ["0", "80vh"]);
+    const top = useTransform(scrollYProgress, [0, 1], ["0", "20vh"]);
     const backgroundImage = useTransform(scrollYProgress, [0, 0.3, 0.5, 0.7, 0.9], [
-      "linear-gradient(rgb(0, 154, 238) 2%, rgb(0, 154, 238) 4%, rgb(123, 217, 246) 40%, rgb(208, 239, 255) 50% rgb(255, 255, 255))",
+      "linear-gradient(rgb(100, 154, 238) 3%, rgb(120, 200, 250) 10%, rgb(180, 200, 250) 20%, rgb(255, 178, 59) 40%, rgb(255, 178, 170) 45%)",
       "linear-gradient(rgb(0, 154, 238) 2%, rgb(0, 154, 238) 4%, rgb(252, 156, 84) 30%, rgb(255, 227, 115) 40%, rgb(255, 222552, 255))",  
       "linear-gradient(rgb(75, 61, 96) 10%, rgb(253, 94, 83) 40%, rgb(252, 156, 84) 80%, rgb(255, 227, 115) 90%, rgb(255, 227, 115))",
       "linear-gradient(rgb(21, 40, 82) 10%, rgb(75, 61, 96) 30%, rgb(75, 61, 96) 50%, rgb(75, 61, 96) 70%, rgb(75, 61, 96))",
@@ -19,7 +19,7 @@ const SunSky = ({ scrollYProgress, opacitySun }) => {
     <motion.div style={{ opacity: opacitySun }}>
       <motion.div 
         initial={{ y: -400 }}
-        animate={{ y: 0 }}
+        animate={{ y: 300 }}
         transition={{ ease: "easeOut", duration: 2 }}
         className='sun_glare'
         style={{ top }}
@@ -28,7 +28,7 @@ const SunSky = ({ scrollYProgress, opacitySun }) => {
       </motion.div>
       <motion.div
         initial={{ backgroundImage: `linear-gradient(rgb(90, 222, 255) 5%, rgb(90, 222, 255) 10%, rgb(255, 255, 255) 70%, rgb(255, 255, 255) 70%, rgb(255, 255, 255))`}}
-        animate={{ backgroundImage: "linear-gradient(rgb(0, 154, 238) 2%, rgb(132, 170, 183) 40%, rgb(255, 255, 255) 80%, rgb(255, 227, 115) 90%, rgb(255, 227, 115))" }}
+        animate={{ backgroundImage: "linear-gradient(rgb(100, 154, 238) 5%, rgb(184, 241, 255) 15%, rgb(208, 239, 255) 20%, rgb(255, 171, 67) 40%, rgb(255, 171, 67))" }}
         style={{ backgroundImage }}
         transition={{ ease: "easeOut", duration: 2 }}
         className='landing'

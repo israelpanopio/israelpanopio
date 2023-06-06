@@ -138,6 +138,7 @@ h3{
 
 .bg_1 {
   z-index: 0;
+  filter: blur(50px);
 }
 .bg_2 {
   z-index: 1;

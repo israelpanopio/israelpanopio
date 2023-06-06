@@ -12,7 +12,7 @@ const Mountains = ({ scrollYProgress, targetRef, opacity }) => {
   return (
     <motion.section className='mountain_div' ref={targetRef} style={{ opacity }}>
       <motion.img
-        src='/background/bg_1.svg'
+        src='/background/bg_1.png'
         alt='mountains'
         className='bg_1 mountains'
         style={{ bottom: bottom1, filter: brightness }}
@@ -21,19 +21,19 @@ const Mountains = ({ scrollYProgress, targetRef, opacity }) => {
         transition={{ ease: "easeOut", duration: 2 }}
       />
       <motion.img
-        src='/background/bg_2.svg'
+        src='/background/bg_2.png'
         alt='mountains'
         className='bg_2 mountains'
-        style={{ bottom: bottom2, filter: brightness }}
+        style={{ bottom: bottom2, filter: brightness, filter: "blur(1px)" }}
         initial={{ bottom: "-40vh" }}
         animate={{ bottom: "-20vh" }}
         transition={{ ease: "easeOut", duration: 2 }}
       />
       <motion.img
-        src='/background/bg_3.svg'
+        src='/background/bg_3.png'
         alt='mountains'
         className='bg_3 mountains'
-        style={{ bottom: bottom3, filter: brightness }}
+        style={{ bottom: bottom3, filter: brightness, filter: "contrast(120%)"  }}
         initial={{ bottom: "-45vh" }}
         animate={{ bottom: "-15vh" }}
         transition={{ ease: "easeOut", duration: 2 }}
