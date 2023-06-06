@@ -5,7 +5,7 @@ const Projects = () => {
     <div className='contents_div' name="projects" id="projects">
       <div style={{ height: "150px", width: "10p"}} />
       <h3>Projects</h3>
-      <Link href="https://www.israelpanopio.com/" className='experience_grid'>
+      <Link href="https://israelpanopio.vercel.app/" className='experience_grid'>
         <div>
           <img 
             src="/israelpanopio.png"
@@ -54,7 +54,7 @@ const Projects = () => {
             Hence, in 2023 we moved to the beautiful British Columbia. 
           </p>
           <p>
-            The journey wasn't easy. Achieving so, inspired me to share my knowledge, and through this website, I help my fellow aspirants achieve their goal as well.
+            The journey wasn't easy. Achieving so, inspired me to share my knowledge, and help my fellow aspirants achieve their own goal through this website.
           </p>
           <ul className='mt-2 flex flex-wrap components'>
             <li className='mr-1.5 mt-2'>
@@ -98,7 +98,7 @@ const Projects = () => {
           <p>
             Did I mention I really like travelling? 
             What better way to do it than to travel the world for free? 
-            Well, it's getting paid to travel!
+            Well there is something better. And it's getting paid to travel!
           </p>
           <p>
             This website is created to guide you in looking past through the negativity, and see how worthwhile and advantageous sailing the seas could be and more importantly, how satisfying a well-managed life is.

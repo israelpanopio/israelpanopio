@@ -1,11 +1,10 @@
 import { motion, useTransform } from 'framer-motion';
 
 const Mountains = ({ scrollYProgress, targetRef, opacity }) => {
-  const bottom1 = useTransform(scrollYProgress, [0, 0.5, 1], ["-25vh", "10vh", "40vh"]);
-  const bottom2 = useTransform(scrollYProgress, [0, 0.5, 1], ["-20vh", "25vh", "65vh"]);
-  const bottom3 = useTransform(scrollYProgress, [0, 0.5, 1], ["-15vh", "40vh", "90vh"]);
-  const top4 = useTransform(scrollYProgress, [0, 0.5, 1], ["50vh", "-20vh", "-85vh"]);
-  const top5 = useTransform(scrollYProgress, [0, 0.3, 1], ["100vh", "100vh", "1vh"]);
+  const bottom1 = useTransform(scrollYProgress, [0, 0.5, 1], ["-25vh", "5vh", "40vh"]);
+  const bottom2 = useTransform(scrollYProgress, [0, 0.5, 1], ["-20vh", "20vh", "65vh"]);
+  const bottom3 = useTransform(scrollYProgress, [0, 0.5, 1], ["-15vh", "35vh", "90vh"]);
+  const top4 = useTransform(scrollYProgress, [0, 0.5, 1], ["50vh", "-15vh", "-85vh"]);
   const backgroundColor = useTransform(scrollYProgress, [0.9, 1], ["rgb(0 0 0)", "rgb(15 23 42)"]);
   const brightness = useTransform(scrollYProgress, [0.5, 0.75], ["brightness(1)", "brightness(0)"]);
     
@@ -46,10 +45,6 @@ const Mountains = ({ scrollYProgress, targetRef, opacity }) => {
         initial={{ top: "70vh" }}
         animate={{ top: "40vh" }}
         transition={{ ease: "easeOut", duration: 2 }}
-      />
-      <motion.div 
-        className='blank_after_landing'
-        style={{ top: top5, backgroundColor }}
       />
     </motion.section>
   )
