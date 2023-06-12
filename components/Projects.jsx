@@ -74,7 +74,7 @@ const Projects = () => {
             </li>
             <li className='mr-1.5 mt-2'>
               <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 leading-5 text-teal-300">
-                Hygraph
+                GraphQL
               </div>
             </li>
             <li className='mr-1.5 mt-2'>
@@ -121,7 +121,7 @@ const Projects = () => {
             </li>
             <li className='mr-1.5 mt-2'>
               <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 leading-5 text-teal-300">
-                Hygraph
+                GraphQL
               </div>
             </li>
             <li className='mr-1.5 mt-2'>
