@@ -1,4 +1,6 @@
+import Link from 'next/link'
 import React from 'react'
+import { FaArrowRight } from 'react-icons/fa'
 
 const Experience = () => {
   return (
@@ -43,6 +45,9 @@ const Experience = () => {
           <p>Aside from the safe navigation of the vessel, crew's personal certificate and document expiry were effectively maintained by automating entry and fetch of data in a file. Said system significantly reduced possible man-made error done in documentations.</p>
         </div>
       </div>
+      <Link href="/resume.pdf">
+        <b className="flex flex-row mt-7 text-lg">View Résumé <FaArrowRight className='ml-2 mt-1'/></b>
+      </Link>
     </div>
   )
 }

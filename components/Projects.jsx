@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { FaArrowRight } from 'react-icons/fa'
 
 const Projects = () => {
   return (
@@ -161,6 +162,9 @@ const Projects = () => {
             </li>
           </ul>
         </div>
+      </Link>
+      <Link href="https://github.com/israelpanopio">
+        <b className="flex flex-row">View Project archieve <FaArrowRight className='ml-2 mt-1'/></b>
       </Link>
     </div>
   )
