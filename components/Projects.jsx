@@ -34,6 +34,11 @@ const Projects = () => {
             </li>
             <li className='mr-1.5 mt-2'>
               <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 leading-5 text-teal-300">
+                Framer Motion
+              </div>
+            </li>
+            <li className='mr-1.5 mt-2'>
+              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 leading-5 text-teal-300">
                 Vercel
               </div>
             </li>
@@ -59,7 +64,17 @@ const Projects = () => {
           <ul className='mt-2 flex flex-wrap components'>
             <li className='mr-1.5 mt-2'>
               <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 leading-5 text-teal-300">
-                NextJS
+                SEO
+              </div>
+            </li>
+            <li className='mr-1.5 mt-2'>
+              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 leading-5 text-teal-300">
+                Google Analytics
+              </div>
+            </li>
+            <li className='mr-1.5 mt-2'>
+              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 leading-5 text-teal-300">
+                Google Adsense
               </div>
             </li>
             <li className='mr-1.5 mt-2'>
@@ -70,6 +85,11 @@ const Projects = () => {
             <li className='mr-1.5 mt-2'>
               <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 leading-5 text-teal-300">
                 Facebook Integration
+              </div>
+            </li>
+            <li className='mr-1.5 mt-2'>
+              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 leading-5 text-teal-300">
+                NextJS
               </div>
             </li>
             <li className='mr-1.5 mt-2'>
@@ -105,8 +125,18 @@ const Projects = () => {
           </p>
           <ul className='mt-2 flex flex-wrap components'>
             <li className='mr-1.5 mt-2'>
-              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1  leading-5 text-teal-300">
-                NextJS
+              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 leading-5 text-teal-300">
+                SEO
+              </div>
+            </li>
+            <li className='mr-1.5 mt-2'>
+              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 leading-5 text-teal-300">
+                Google Adsense
+              </div>
+            </li>
+            <li className='mr-1.5 mt-2'>
+              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 leading-5 text-teal-300">
+                Facebook Integration
               </div>
             </li>
             <li className='mr-1.5 mt-2'>
@@ -115,8 +145,8 @@ const Projects = () => {
               </div>
             </li>
             <li className='mr-1.5 mt-2'>
-              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 leading-5 text-teal-300">
-                Facebook Integration
+              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1  leading-5 text-teal-300">
+                NextJS
               </div>
             </li>
             <li className='mr-1.5 mt-2'>
