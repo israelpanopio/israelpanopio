@@ -4,7 +4,7 @@ const Experience = () => {
   return (
     <div className='contents_div' name="experience" id="experience">
     <div style={{ height: "150px", width: "10p"}} />
-      <h3>Experience</h3>
+      <h3 style={{ marginBottom: "-30px"}}>Experience</h3>
       <div className='experience_grid'>
         <p>May 2019 - 2021 </p>
         <div>

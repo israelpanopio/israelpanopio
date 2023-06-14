@@ -33,15 +33,15 @@ const Intro = ({ scrollYProgress }) => {
 
   return (         
     <div className='intro_message'>
-        <motion.p style={{ opacity: opacityHi }} className='md:text-xl text-lg'>Hi, my name is </motion.p>
-        <motion.p style={{ opacity: opacityName, color: "white" }} className='md:text-7xl text-5xl font-bold'>Israel Panopio</motion.p>
-        <motion.p style={{ opacity: opacityMessage }} className='md:text-2xl text-xl mt-2'> 
+        <motion.p style={{ opacity: opacityHi }} className='text-lg'>Hi, my name is </motion.p>
+        <motion.p style={{ opacity: opacityName, color: "white" }} className='text-5xl font-bold'>Israel Panopio</motion.p>
+        <motion.p style={{ opacity: opacityMessage }} className='md:text-lg text-xl mt-2'> 
             I'm a <b>web developer</b> and a permanent resident of Canada. A Filipino who moved to the Beautiful British Columbia to chase more sunsets. 
         </motion.p>
         <br />
         <motion.button
             style={{ opacity: opacityButton, color: "white" }}
-            className='text-xl py-3 px-6 rounded-full intro_button'
+            className='md:text-base text-xl py-2 px-4 rounded-full intro_button'
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
         ><motion.a 
@@ -53,35 +53,35 @@ const Intro = ({ scrollYProgress }) => {
 
         <motion.div className='nav' style={{ opacity: opacityNav }}>
             <LinkS
-                className='navLinkScroll'
+                className='navLinkScroll my-0 py-1 '
                 to="about"
                 smooth={true}
                 duration={500}
                 spy={true}
                 exact='true'
-                // offset={-60}
-            ><p>ABOUT</p></LinkS>
+                offset={60}
+            >ABOUT</LinkS>
             <LinkS
-                className='navLinkScroll'
+                className='navLinkScroll py-1 my-0'
                 to="projects"
                 smooth={true}
                 duration={500}
                 spy={true}
                 exact='true'
-                // offset={-60}
+                offset={60}
             >PROJECTS</LinkS>
             <LinkS
-                className='navLinkScroll'
+                className='navLinkScroll  py-1 my-0'
                 to="experience"
                 smooth={true}
                 duration={500}
                 spy={true}
                 exact='true'
-                // offset={-60}
+                offset={60}
             >EXPERIENCE</LinkS>
         </motion.div>
 
-        <div className='flex flex-row items-center justify-center gap-8 text-4xl'>
+        <div className='flex flex-row items-center justify-center md:justify-start gap-8 md:gap-1 text-4xl'>
             <motion.a 
                 style={{ opacity: opacityIcon3 }}
                 className='intro_icons' 

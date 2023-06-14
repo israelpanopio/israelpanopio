@@ -4,7 +4,7 @@ const Projects = () => {
   return (
     <div className='contents_div' name="projects" id="projects">
       <div style={{ height: "150px", width: "10p"}} />
-      <h3>Projects</h3>
+      <h3 style={{ marginBottom: "-20px"}}>Projects</h3>
       <Link href="https://israelpanopio.vercel.app/" className='experience_grid'>
         <div>
           <img 
