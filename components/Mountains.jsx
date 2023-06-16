@@ -18,7 +18,7 @@ const Mountains = ({ scrollYProgress, targetRef, opacity }) => {
         className='bg_1 mountains'
         style={{ y: y1, filter: brightness1 }}
         initial={{ bottom: "-35vh" }}
-        animate={{ bottom: "-25vh" }}
+        animate={{ bottom: "-17vh" }}
         transition={{ ease: "easeOut", duration: 2 }}
       />
       <motion.img
@@ -27,7 +27,7 @@ const Mountains = ({ scrollYProgress, targetRef, opacity }) => {
         className='bg_2 mountains'
         style={{ y: y2, filter: brightness2}}
         initial={{ bottom: "-40vh" }}
-        animate={{ bottom: "-20vh" }}
+        animate={{ bottom: "-15vh" }}
         transition={{ ease: "easeOut", duration: 2 }}
       />
       <motion.img
@@ -36,7 +36,7 @@ const Mountains = ({ scrollYProgress, targetRef, opacity }) => {
         className='bg_3 mountains'
         style={{ y: y3, filter: brightness3}}
         initial={{ bottom: "-45vh" }}
-        animate={{ bottom: "-15vh" }}
+        animate={{ bottom: "-13vh" }}
         transition={{ ease: "easeOut", duration: 2 }}
       />
       <motion.img

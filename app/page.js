@@ -12,6 +12,7 @@ export default function Home() {
     
   return (
   <div style={{margin: "0"}}>
+    <img src="/sunset.jpg" style={{ display: "none"}} />
     <Mouse />
     <SunSet />
     <motion.div className='content_div'>
