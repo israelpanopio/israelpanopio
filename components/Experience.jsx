@@ -20,14 +20,14 @@ const Experience = () => {
         <div>
           <b>Business Owner · Water for Less (Water Refilling Station)</b>
           <p>Started our own business. Successfully grow the business to stability by managing and marketing our service directly to consumers.</p>
-          <p>Once profitable, I turned it over to the parents for their source of income, that they can manage even during old age.</p>
+          <p>Once profitable, I turned it over to my parents for their source of income, that they can manage even during old age.</p>
         </div>
       </div>  
       <div className='experience_grid'>
         <p>Nov 2018</p>
         <div>
           <b>Volunteer · Coast and Waterway Conservation in Auckland</b>
-          <p>Volunteered in the conservation program, which has led me closer to nature and learn how to protect it even more.</p>
+          <p>Volunteered in the conservation program, which has led me closer to nature, and learn how to protect it even more.</p>
         </div>
       </div>  
       <div className='experience_grid'>

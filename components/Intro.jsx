@@ -11,10 +11,10 @@ const Intro = ({ scrollYProgress }) => {
     const opacityMessage = useTransform(scrollYProgress, [0.8, 0.85], [0, 1]);
     const opacityButton = useTransform(scrollYProgress, [0.85, 0.9], [0, 1]);
     const opacityNav = useTransform(scrollYProgress, [0.95, 1], [0, 1]);
-    const opacityIcon1 = useTransform(scrollYProgress, [0.4, 0.45], [0, 1]);
-    const opacityIcon2 = useTransform(scrollYProgress, [0.45, 0.5], [0, 1]);
-    const opacityIcon3 = useTransform(scrollYProgress, [0.55, 0.6], [0, 1]);
-    const opacityIcon4 = useTransform(scrollYProgress, [0.6, 0.65], [0, 1]);
+    const opacityIcon1 = useTransform(scrollYProgress, [0.45, 0.5], [0, 1]);
+    const opacityIcon2 = useTransform(scrollYProgress, [0.5, 0.55], [0, 1]);
+    const opacityIcon3 = useTransform(scrollYProgress, [0.6, 0.65], [0, 1]);
+    const opacityIcon4 = useTransform(scrollYProgress, [0.65, 0.7], [0, 1]);
 
     const [scrollNav, setScrollNav] = useState(false);
 
@@ -36,7 +36,7 @@ const Intro = ({ scrollYProgress }) => {
         <motion.p style={{ opacity: opacityHi }} className='text-lg'>Hi, my name is </motion.p>
         <motion.p style={{ opacity: opacityName, color: "white" }} className='text-5xl font-bold'>Israel Panopio</motion.p>
         <motion.p style={{ opacity: opacityMessage }} className='md:text-lg text-xl mt-2'> 
-            I'm a <b>web developer</b> and a permanent resident of Canada. A Filipino who moved to the Beautiful British Columbia to chase more sunsets. 
+            I desgin and build things for the web. But when I'm not, I'm out chasing the sunset.
         </motion.p>
         <br />
         <motion.button

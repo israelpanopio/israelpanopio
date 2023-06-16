@@ -12,8 +12,8 @@ const SunSet = () => {
         target: targetRef,
         offset: ["start 0.1", "end end"]
     });  
-    const opacity = useTransform(scrollYProgress, [0.7, 0.75], [1, 0]);
-    const opacitySun = useTransform(scrollYProgress, [0.5, 0.65], [1, 0]);
+    const opacity = useTransform(scrollYProgress, [0.8, 0.85], [1, 0]);
+    const opacitySun = useTransform(scrollYProgress, [0.75, 0.8], [1, 0]);
 
   return (
     <div>

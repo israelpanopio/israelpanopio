@@ -17,10 +17,10 @@ const Projects = () => {
         <div>
           <b>israelpanopio.com</b>
           <p>
-            A portfolio site built with NextJS and Tailwind CSS, and animated with Framer motion.
+            This portfolio site was built with NextJS and Tailwind CSS, and animated with Framer motion.
           </p>
           <p>
-            With updated knowledge on the latest NextJS, ready to take on projects and/or work full time as a Jr. Web Developer. 
+            With updated knowledge on the latest version of NextJS, ready to take on projects and/or work full time as a Jr. Web Developer. 
           </p>
           <ul className='mt-2 flex flex-wrap components'>
             <li className='mr-1.5 mt-2'>
@@ -56,11 +56,11 @@ const Projects = () => {
         </div>
         <div>
           <b>Filipino Aspirants to Canada</b>
-          <p>Back in 2020, my wife and I decided to settle down to one of the most beautiful places in the world.
-            Hence, in 2023 we moved to the beautiful British Columbia. 
+          <p>We love travelling. But back in 2021, my wife and I decided to settle down. Settle down meaning to move to one of the most beautiful places in the world, and be closer to where the adventure is.
+            Hence, we moved to the beautiful British Columbia. 
           </p>
           <p>
-            The journey wasn't easy. Achieving so, inspired me to share my knowledge, and help my fellow aspirants achieve their own goal through this website.
+          The journey wasn't easy. Achieving so, inspired me to share my knowledge. This easy-to-navigate website has helped hundreds, if not, thousands of aspirants achieved their goal too.
           </p>
           <ul className='mt-2 flex flex-wrap components'>
             <li className='mr-1.5 mt-2'>
@@ -117,12 +117,12 @@ const Projects = () => {
         <div>
           <b>Modern Marino</b>
           <p>
-            Did I mention I really like travelling? 
+            Have I mention I really like travelling? 
             What better way to do it than to travel the world for free? 
-            Well there is something better. And it's getting paid to travel!
+            Well getting paid to travel is certainly better!
           </p>
           <p>
-            This website is created to guide you in looking past through the negativity, and see how worthwhile and advantageous sailing the seas could be and more importantly, how satisfying a well-managed life is.
+            This website is created to guide my fellow seafarers in looking past through the negativity, and see how worthwhile and advantageous sailing the seas could be. More importantly, how satisfying a well-managed life is.
           </p>
           <ul className='mt-2 flex flex-wrap components'>
             <li className='mr-1.5 mt-2'>
